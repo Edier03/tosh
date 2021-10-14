@@ -1,0 +1,49 @@
+html,body {
+    height:100%;
+}
+
+header {
+        
+    display:block;
+    background:rgb(0, 0, 0);
+    padding:8px;
+    color: white;
+   
+}
+
+section {
+    width: 76%;
+    background: #074;
+    float: left;
+    overflow: auto;
+    padding-bottom: 30px;
+    padding-top:10px;
+}
+
+aside {
+    float: right;
+    width: 23%;
+    border: 3px solid red;
+    border-radius: 50px;
+    background-color: #095;
+    /*Si quisieramos ocultar el contenido relacionado pondriamos visibility a hidden*/
+   /* visibility: hidden;*/
+}
+
+footer {
+    position: relative;
+    margin-top: -50px;
+    height: 40px; 
+    padding:5px 0px;
+    clear: both;
+    background: #C0BBA0 ;
+    text-align: center;
+    color: #fff;
+}
+figure {
+    display: table; margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}

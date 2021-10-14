@@ -1,0 +1,74 @@
+<!--Fecha 13/10/2021-->
+<!--Botones-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/estilo_index5..css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a class="return" href="principal.html">←Regresar</a>
+    <a href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <button type="button" onclick="popup()">Probar función</button>
+    </a>
+    <a href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <button type="button" onclick="alert('Esto es un cuadro de alerta')">Probar alerta</button>
+    </a>
+    <a href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <button type="button" onclick="confirmacion()" >Probar confirm</button>
+    </a>
+    <a href="">
+        <span></span>
+        <span></span><span></span><span></span>
+        <button type="button" onclick="prompter()">Probar prompt</button>
+    </a>
+    <!--Scripts-->
+    <script> 
+        function prompter() { 
+        var reply = prompt("Buenas ¿cuál es tu nombre?", "") 
+        alert ( "Es un gusto tenerte aquí " + reply + "!") } 
+        </script> 
+        
+    <script> 
+        var age = 18;
+         var ella = 'El señor'; 
+        var el = 'La señora'; 
+        document.write(ella + " tiene " + age + " años\n" ); 
+        document.write(el + " tiene " + age + " años");
+         </script>
+    <script>
+        function confirmacion() {
+            var pregunta = confirm("¿Deseas visitar la página principal?")
+            if (pregunta){
+                alert("Te envío allí rápidamente")
+                window.location = "https://google.com/";
+            }
+            else{
+                alert("Quizás en otro momento...\n Gracias de todas formas")
+            }
+        }
+        </script>
+        
+    <script>
+        function popup() {
+            alert("Hola gente")
+        }
+        </script>
+        
+</body>
+</html>

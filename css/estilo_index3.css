@@ -1,0 +1,21 @@
+body { 
+    background-color: #f4d4d3; 
+}
+
+header { 
+    background-color: #E7C507 ; 
+}
+
+header h1 { 
+    text-align: center; 
+    color: navy; 
+    padding: 0.5em; 
+    font-size: 1.5em; 
+}
+
+header h2 { 
+    text-align: center; 
+    color: #663366; 
+    padding: 0.5em; 
+    font-size: 1.2em; 
+}

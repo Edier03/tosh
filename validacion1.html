@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>Vaidaci�n</title>
+
+<style type="text/css">
+html{background-color:#0CCCCC;}
+form#pago {
+margin:auto;
+background: Green;
+color: white;
+font-size: 18px;
+padding: 30px;
+width: 350px;
+border:solid 10px LightSteelBlue;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+}
+
+form#pago fieldset {
+border: none;
+}
+
+form#pago input{
+font-size:12px;
+background: yellow;
+border:solid 1px Green;
+border-radius: 3px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+float: right;
+margin-right: 15px;
+width: 200px;
+}
+
+form#pago ol li {
+line-height: 25px;
+list-style: none;
+}
+
+form#pago [required]{
+border:solid 1px red;
+}
+
+input:required {
+outline: 1px solid red;
+}
+</style>
+</head>
+
+<body>
+
+<form id="pago">
+<fieldset>
+<legend>Datos del comprador</legend>
+<ol>
+<li>
+<label for="nombre">Nombre</label>
+<input id="nombre" name="nombre" type="text" placeholder="Escribe tu nombre completo" required autofocus>
+<br>
+</li>
+<li>
+<label for="email">Email</label>
+<input id="email" name="email" type="email" placeholder="ejemplo@hotmail.com" required>
+</li>
+<li>
+<label for="telefono">Tel�fono</label>
+<input id="telefono" name="telefono" type="tel" placeholder="Ej. +971123456" required>
+</li>
+<li>
+<label for="pais">Pa�s</label>
+<input id="pais" name="pais" type="text" required>
+</li>
+</ol>
+</fieldset>
+<fieldset>
+<legend>Datos de tarjeta de cr�dito o d�bito</legend>
+<ol>
+<li>
+<label for="numtarjeta">N�mero</label>
+<input id="numtarjeta" name="numtarjeta" type="number" placeholder="Ej. 5555-4444-3333-2222" required>
+</li>
+<li>
+<label for="nomtarjeta">Nombre</label>
+<input id="nomtarjeta" name="nomtarjeta" type="text" placeholder="Nombre que figura en la tarjeta" required>
+</li>
+</ol>
+</fieldset>
+-------------------------------------------------
+<fieldset>
+    <script>
+        function popup() {
+            alert("Pineda, cara de culo")
+        }
+        </script>
+<button type="submit" onclick="popup()">Confirmar pedido</button>
+</fieldset>
+</form>
+
